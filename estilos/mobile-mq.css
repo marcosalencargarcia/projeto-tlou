@@ -1,3 +1,8 @@
+@font-face {
+    font-family: compact;
+    src: url('font/compacta_bt/Compctan.ttf') format('truetype');
+}
+
 * {
     padding: 0px;
     margin: 0px;
@@ -7,14 +12,39 @@
 
 :root {
     --azul-claro: #2b4861;
-    --azul-escuro: #020305;
+    --azul-escuro: #070a11;
     --verde-claro: #79b466;
     --verde-escuro: #355134;
     --bege: #AF854D;
 }
 
+header {
+    position: relative;
+}
+
+header > img#logo-tipo {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 250px;
+}
+
 body {
     background-color: black;
+}
+
+h1, h2, a {
+    font-family: compact, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.388);
+}
+
+h1, h2 {
+    letter-spacing: 0.5pt;
+    font-size:2.063em;
 }
 
 header.cabecalho {
@@ -25,13 +55,15 @@ header.cabecalho {
 nav.linhamenu {
     text-align: center;
     height: 30px;
+    width: 96vw;
+    margin: auto;
+    background-color: var(--azul-claro);
 }
 
 a.btnmenu {
     margin: 5px 0px 0px 5px;
     text-decoration: none;
     color: white;
-    background-color: aqua;
     padding: 10px;
 }
 
@@ -40,24 +72,20 @@ section.secao {
     width: 96vw;
     height: 80vh;
     margin: auto;
-    border: 1px solid black;
 }
 
 div.titulo {
     background-color: rgba(51, 51, 51, 0.363);
     width: 100%;
-    height: 20%;
-    border: 1px solid rgb(255, 255, 255);
     color: white;
-    padding: 10px;
-    text-align: justify;
+    padding: 20px;
+    text-align: center;
 }
 
 div.conteudo {
     background-color: rgba(51, 51, 51, 0.363);
     width: 100%;
     height: 80%;
-    border: 1px solid rgb(255, 255, 255);
     padding: 10px;
     color: white;
     text-align: justify;
