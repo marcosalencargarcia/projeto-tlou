@@ -22,7 +22,7 @@ header {
     position: relative;
 }
 
-header > img#logo-tipo {
+img#logo-tipo {
     position: absolute;
     top: 25%;
     left: 10%;
@@ -40,6 +40,7 @@ h1, h2, a {
     text-transform: uppercase;
     font-size: 1.5em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.388);
+    text-decoration: none;
 }
 
 h1, h2 {
@@ -52,17 +53,27 @@ header.cabecalho {
     height: 150px;
 }
 
-nav.linhamenu {
+ul.linhamenu {
     text-align: center;
-    height: 30px;
     width: 96vw;
     margin: auto;
-    background-color: var(--azul-claro);
+    background-color: var(--bege);
+    display: flex;
+    justify-content: center;
+    display: none;
 }
 
-a.btnmenu {
+.material-symbols-outlined {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translate(-50%, 0%);
+    color: white;
+}
+
+li.btnmenu {
     margin: 5px 0px 0px 5px;
-    text-decoration: none;
+    list-style-type: none;
     color: white;
     padding: 10px;
 }
