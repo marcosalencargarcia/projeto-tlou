@@ -57,7 +57,7 @@ ul.linhamenu {
     text-align: center;
     width: 96vw;
     margin: auto;
-    background-color: var(--bege);
+    background-color: var(--azul-claro);
     display: flex;
     justify-content: center;
     display: none;
