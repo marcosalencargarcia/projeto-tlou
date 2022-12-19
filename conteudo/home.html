@@ -7,7 +7,7 @@
     <title>The Lastof Us - Home</title>
     <link rel="stylesheet" href="../estilos/mobile-mq.css" media="all">
     <link rel="stylesheet" href="../estilos/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <header class="cabecalho">
@@ -24,9 +24,16 @@
     </ul>
     <main>
         <section class="secao">
-            <br> <br> <br> <br> THE LAST OF US
+            <div class="backg">
+                <div class="radios">
+                    <input type="radio" name="image" id="ifirst" checked onclick="radios()">
+                    <input type="radio" name="image" id="isecond" onclick="radios()">
+                    <input type="radio" name="image" id="ithird" onclick="radios()">
+                    <input type="radio" name="image" id="ifourth" onclick="radios()">
+                </div>
+            </div>
         </section>
-        <section class="secao">
+        <section class="secao" id="second">
                 <div class="titulo">
                     <h2>Conheça como surgiu a história da franquia tão aclamada pelo público e com tantos fãs - NaughtyDog</h2>
                 </div>
@@ -34,7 +41,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis dolorem possimus totam saepe quaerat ut fugit impedit, facere ratione, provident, sequi vel voluptatibus deserunt dolorum accusamus tenetur expedita. Praesentium, ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero recusandae dignissimos quidem obcaecati at quibusdam pariatur vero modi, ullam ratione molestias, eveniet explicabo molestiae in officia, consequuntur laudantium corporis doloribus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, quasi mollitia, optio ipsam ab quam praesentium placeat eveniet omnis non sint excepturi sunt quaerat delectus maxime doloremque consectetur accusantium! Excepturi?</p>
                 </div>
         </section>
-        <section class="secao">
+        <section class="secao" id="third">
             <div>
 
             </div>
@@ -42,7 +49,7 @@
 
             </div>
         </section>
-        <section class="secao">
+        <section class="secao" id="fourth">
             <div class="titulo">
 
             </div>
@@ -54,6 +61,6 @@
     <footer>
 
     </footer>
-    <script src="script/script.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 </html>
