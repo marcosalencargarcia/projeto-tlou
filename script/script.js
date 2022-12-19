@@ -8,13 +8,30 @@ function radios() {
     
     if (radio[0].checked) {
         backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
     } else if (radio[1].checked) {
         backg.style.background = "url(../imagens/second-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
     } else if (radio[2].checked) {
         backg.style.background = "url(../imagens/third-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
     } else if (radio[3].checked) {
         backg.style.background = "url(../imagens/fourth-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
     }
+    /*
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    */
 
 }
 

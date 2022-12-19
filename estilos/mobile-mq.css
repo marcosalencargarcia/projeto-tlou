@@ -90,10 +90,13 @@ li.btnmenu {
     color: white;
     padding: 10px;
     cursor: pointer;
+    transition: 0.2s;
 }
 
 li.btnmenu:hover {
     background-color: var(--cor7-transp);
+    border-radius: 10px;
+    text-decoration: underline;
 }
 
 div.titulo {
