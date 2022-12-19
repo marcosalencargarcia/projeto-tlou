@@ -4,6 +4,36 @@ let divRadio = document.querySelector('.radios')
 
 divRadio.addEventListener("click", radios)
 
+setInterval(function autoImage() {
+    if (radio[0].checked) {
+        backg.style.background = "url(../imagens/second-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
+        radio[1].checked = true
+    } else if 
+    (radio[1].checked) {
+        backg.style.background = "url(../imagens/third-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
+        radio[2].checked = true
+    } else if (radio[2].checked) {
+        backg.style.background = "url(../imagens/fourth-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
+        radio[3].checked = true
+    } else if (radio[3].checked) {
+        backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
+        backg.style.backgroundRepeat = 'no-repeat'
+        backg.style.backgroundPosition = 'center center'
+        backg.style.backgroundSize = 'cover'
+        radio[0].checked = true
+    }
+}, 10000)
+
+
 function radios() {
     
     if (radio[0].checked) {
@@ -34,7 +64,6 @@ function radios() {
     */
 
 }
-
 
 function menuPrincipal() {
 

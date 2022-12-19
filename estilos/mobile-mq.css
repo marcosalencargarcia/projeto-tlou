@@ -118,6 +118,11 @@ div.radios {
     transform: translate(-50%, -50%);
 }
 
+.btnradios {
+    padding-left: 10px;
+    display: inline;
+}
+
 div.titulo {
     background-color: rgba(51, 51, 51, 0.363);
     width: 100%;
