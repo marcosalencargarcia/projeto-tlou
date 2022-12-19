@@ -12,7 +12,7 @@
 
 :root {
     --cor1: #2b4861;
-    --cor2-transp: rgba(0, 0, 0, 0.296);
+    --cor2-transp: rgba(0, 0, 0, 0.46);
     --cor3: #070a11;
     --cor4: #79b466;
     --cor5: #355134;
@@ -85,12 +85,14 @@ ul.linhamenu {
 }
 
 li.btnmenu {
-    margin: 5px 0px 0px 5px;
+    margin: auto;
+    width: 50%;
     list-style-type: none;
     color: white;
     padding: 10px;
     cursor: pointer;
     transition: 0.2s;
+    border-bottom: 1px solid black;
 }
 
 li.btnmenu:hover {
