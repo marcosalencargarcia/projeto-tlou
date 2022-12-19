@@ -1,6 +1,7 @@
 let radio = document.getElementsByName('rimage')
 let backg = document.querySelector('.backg')
 let divRadio = document.querySelector('.radios')
+const btn = document.getElementById('btn-menu-hamb')
 
 divRadio.addEventListener("click", radios)
 
@@ -48,6 +49,8 @@ function menuPrincipal() {
     } else {
         menu.style.top = '150px'
     }
+
+    btn.classList.toggle('animacao')
 
     /*
     top: 150px;
