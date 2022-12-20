@@ -37,12 +37,16 @@ body {
     background-color: black;
 }
 
+div {
+    width: 100%;
+}
+
 h1, h2, a {
     font-family: compact, Arial, Helvetica, sans-serif;
     font-weight: normal;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.388);
     text-decoration: none;
 }
@@ -66,7 +70,7 @@ ul.linhamenu {
     transform: translate(-50%, 0%);
     display: block;
     text-align: center;
-    width: 96vw;
+    min-width: 800px;
     height: auto;
     transition: 0.5s;
     margin: auto;
@@ -134,27 +138,26 @@ li.item-menu a {
     text-shadow: 0px 0px 10px var(--cor8);
 }
 
-div.backg {
+section:nth-child(1) div.backg {
     position: relative;
     background-image: url('../imagens/first-home-background.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
     transition: 0.5s;
     z-index: 0;
 } 
+
 
 button.arrow-left {
     position: absolute;
     top: 0px;
     bottom: 0px;
     left: 0px;
-    font-size: 28px;
+    font-size: 40px;
     padding: 25px;
     border: none;
-    color: var(--cor7-transp);
+    color: rgba(0, 0, 0, 0.704);
     background: linear-gradient(to left, transparent 0%, var(--cor2-transp));
     cursor: pointer;
     opacity: 0.5;
@@ -170,10 +173,10 @@ button.arrow-right {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    font-size: 28px;
+    font-size: 40px;
     padding: 25px;
     border: none;
-    color: var(--cor7-transp);
+    color: rgba(0, 0, 0, 0.704);
     background: linear-gradient(to right, transparent 0%, var(--cor2-transp));
     cursor: pointer;
     opacity: 0.5;
@@ -226,27 +229,111 @@ input.radio {
     box-shadow: 0px 0px 5px var(--cor9);
 }
 
-
-div.titulo {
-    background-color: rgba(51, 51, 51, 0.363);
+section:nth-child(even) div.backg {
+    background: var(--cor9);
     width: 100%;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+    height: 100%;
+    }
 
-div.conteudo {
-    background-color: rgba(51, 51, 51, 0.363);
+div.backg {
+    background-color: var(--cor8);
     width: 100%;
-    height: 80%;
-    padding: 10px;
-    color: white;
-    text-align: justify;
+    height: 100%;
+
 }
 
 section.secao {
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
-    width: 96vw;
+    background-color: var(--cor9);
+    max-width: 1300px;
     height: 80vh;
     margin: auto;
+    box-shadow: 0px 0px 10px var(--cor9);
 }
+
+div.titulo {
+    width: 100%;
+    color: var(--cor8);
+    padding: 30px;
+    text-align: left;
+}
+
+div.titulo h2 {
+    color: var(--cor8);
+    text-shadow: 2px 2px 10 rgba(0, 0, 0, 0.382);
+}
+
+div.conteudo p {
+    width: 100%;
+    height: 80%;
+    padding: 30px 20px 10px 20px;
+    color: var(--cor8);
+    text-align: justify;
+}
+
+section#third > div.backg > div:nth-child(1){
+    position: relative;
+    height: 60%;
+}
+
+section#third > div.backg > div:nth-child(2){
+    position: relative;
+    height: 45%;
+}
+
+iframe {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    margin: auto;
+    width: 95%;
+    height: 300px;
+}
+
+div.carrossel {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    display: flex;
+    width: 265px;
+    height: 150px;
+    overflow-x: hidden;
+    z-index: 0;
+}
+
+.arrow-image-video {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-310%, 0%);
+    background-color: var(--cor9);
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+    font-size: 45px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--cor8);
+    line-height: 90%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.arrow-image-video:hover {
+    border: 2px solid var(--cor8);
+    box-shadow: 0px 0px 5px var(--cor9);
+}
+
+.arrow-image-video:active {
+    background-color: var(--cor8);
+    color: var(--cor9);
+    box-shadow: 0px 0px 10px var(--cor9);
+}
+
+.arrow-image-video:nth-child(2) {
+    transform: translate(215%, 0%);
+}
+
+
