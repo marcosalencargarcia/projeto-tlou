@@ -6,20 +6,7 @@ const btn = document.getElementById('btn-menu-hamb')
 divRadio.addEventListener("click", radios)
 
 setInterval(function autoImage() {
-    if (radio[0].checked) {
-        backg.style.backgroundImage = "url(../imagens/second-home-background.jpg)"
-        radio[1].checked = true
-    } else if 
-    (radio[1].checked) {
-        backg.style.backgroundImage = "url(../imagens/third-home-background.jpg)"
-        radio[2].checked = true
-    } else if (radio[2].checked) {
-        backg.style.backgroundImage = "url(../imagens/fourth-home-background.jpg)"
-        radio[3].checked = true
-    } else if (radio[3].checked) {
-        backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
-        radio[0].checked = true
-    }
+    clickMudaImagemDireita()
 }, 10000)
 
 
@@ -55,6 +42,42 @@ function menuPrincipal() {
     /*
     top: 150px;
     */
+}
+
+function clickMudaImagemDireita() {
+
+    if (radio[0].checked) {
+        backg.style.backgroundImage = "url(../imagens/second-home-background.jpg)"
+        radio[1].checked = true
+    } else if 
+    (radio[1].checked) {
+        backg.style.backgroundImage = "url(../imagens/third-home-background.jpg)"
+        radio[2].checked = true
+    } else if (radio[2].checked) {
+        backg.style.backgroundImage = "url(../imagens/fourth-home-background.jpg)"
+        radio[3].checked = true
+    } else if (radio[3].checked) {
+        backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
+        radio[0].checked = true
+    }
+
+}
+
+function clickMudaImagemEsquerda() {
+    if (radio[0].checked) {
+        backg.style.backgroundImage = "url(../imagens/fourth-home-background.jpg)"
+        radio[3].checked = true
+    } else if 
+    (radio[1].checked) {
+        backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
+        radio[0].checked = true
+    } else if (radio[2].checked) {
+        backg.style.backgroundImage = "url(../imagens/second-home-background.jpg)"
+        radio[1].checked = true
+    } else if (radio[3].checked) {
+        backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
+        radio[2].checked = true
+    }
 }
 
 

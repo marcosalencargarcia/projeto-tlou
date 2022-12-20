@@ -17,7 +17,7 @@
     --cor4: #79b466;
     --cor5: #355134;
     --cor6: #AF854D;
-    --cor7-transp: rgba(0, 0, 0, 0.43);
+    --cor7-transp: rgba(0, 0, 0, 0.37);
     --cor8: black;
     --cor9: white;
 }
@@ -145,6 +145,45 @@ div.backg {
     transition: 0.5s;
     z-index: 0;
 } 
+
+button.arrow-left {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    font-size: 28px;
+    padding: 25px;
+    border: none;
+    color: var(--cor7-transp);
+    background: linear-gradient(to left, transparent 0%, var(--cor2-transp));
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+button.arrow-left:hover {
+    opacity: 1;
+}
+
+button.arrow-right {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    font-size: 28px;
+    padding: 25px;
+    border: none;
+    color: var(--cor7-transp);
+    background: linear-gradient(to right, transparent 0%, var(--cor2-transp));
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
+
+button.arrow-right:hover {
+    opacity: 1;
+}
+
 
 div.radios {
     position: absolute;
