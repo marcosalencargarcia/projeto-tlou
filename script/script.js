@@ -2,10 +2,15 @@ let radio = document.getElementsByName('rimage')
 let backg = document.querySelector('.backg')
 let divRadio = document.querySelector('.radios')
 const btnMenu = document.getElementById('btn-menu-hamb')
-let imgv = document.getElementsByClassName('img-video')[0]
+let imgv = document.getElementsByClassName('img-video')
+let videos = document.getElementsByTagName('iframe')
 var px = 0
 
 divRadio.addEventListener("click", radios)
+imgv[0].addEventListener("click", clickimagem1)
+imgv[1].addEventListener("click", clickimagem2)
+imgv[2].addEventListener("click", clickimagem3)
+imgv[3].addEventListener("click", clickimagem4)
 
 
 setInterval(function autoImage() {
@@ -30,6 +35,35 @@ function radios() {
     background-size: cover;
     */
 
+}
+
+function clickimagem1() {
+    videos[0].style.opacity = '1'
+    videos[1].style.opacity = '0'
+    videos[2].style.opacity = '0'
+    videos[3].style.opacity = '0'
+
+}
+
+function clickimagem2() {
+    videos[0].style.opacity = '0'
+    videos[1].style.opacity = '1'
+    videos[2].style.opacity = '0'
+    videos[3].style.opacity = '0'
+}
+
+function clickimagem3() {
+    videos[0].style.opacity = '0'
+    videos[1].style.opacity = '0'
+    videos[2].style.opacity = '1'
+    videos[3].style.opacity = '0'
+}
+
+function clickimagem4() {
+    videos[0].style.opacity = '0'
+    videos[1].style.opacity = '0'
+    videos[2].style.opacity = '0'
+    videos[3].style.opacity = '1'
 }
 
 function menuPrincipal() {
@@ -87,7 +121,7 @@ function clickMudaImagemVideo() {
 
     if (px < 0) {
         px += 265
-        imgv.style.marginLeft = `${px}px`
+        imgv[0].style.marginLeft = `${px}px`
     }
 }
 
@@ -95,7 +129,7 @@ function clickMudaImagemVideoDireita() {
 
     if (px > -795) {
         px += -265
-        imgv.style.marginLeft = `${px}px`
+        imgv[0].style.marginLeft = `${px}px`
     }
 }
 

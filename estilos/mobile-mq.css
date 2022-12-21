@@ -272,12 +272,11 @@ div.conteudo p {
 
 section#third > div.backg > div:nth-child(1){
     position: relative;
-    height: 60%;
+    height: 65%;
 }
 
 section#third > div.backg > div:nth-child(2){
     position: relative;
-    height: 45%;
 }
 
 iframe {
@@ -288,6 +287,19 @@ iframe {
     margin: auto;
     width: 95%;
     height: 300px;
+    transition: all 0.3s ease-in-out;
+}
+
+iframe:nth-child(2) {
+    opacity: 0;
+}
+
+iframe:nth-child(3) {
+    opacity: 0;
+}
+
+iframe:nth-child(4) {
+    opacity: 0;
 }
 
 div.carrossel {
@@ -339,6 +351,10 @@ div.carrossel {
 
 .arrow-image-video:nth-child(2) {
     transform: translate(215%, 0%);
+}
+
+.img-video {
+    cursor: pointer;
 }
 
 .img-video:nth-child(1) {
