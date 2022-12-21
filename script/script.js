@@ -118,6 +118,8 @@ function clickMudaImagemVideoDireita() {
     if (px > -795 + 50) {
         px += -275
         imgv[0].style.marginLeft = `${px}px`
+    } else {
+        imgv[0].style.marginLeft = `50px`
     }
 }
 
