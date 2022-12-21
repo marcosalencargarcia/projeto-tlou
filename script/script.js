@@ -3,8 +3,8 @@ let backg = document.querySelector('.backg')
 let divRadio = document.querySelector('.radios')
 const btnMenu = document.getElementById('btn-menu-hamb')
 let imgv = document.getElementsByClassName('img-video')
-let videos = document.getElementsByTagName('iframe')
-var px = 0
+let divVideos = document.querySelector('section#third > div.backg > div:nth-child(1)')
+var px = 50
 
 divRadio.addEventListener("click", radios)
 imgv[0].addEventListener("click", clickimagem1)
@@ -38,32 +38,20 @@ function radios() {
 }
 
 function clickimagem1() {
-    videos[0].style.opacity = '1'
-    videos[1].style.opacity = '0'
-    videos[2].style.opacity = '0'
-    videos[3].style.opacity = '0'
+    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/WxjeV10H1F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 
 }
 
 function clickimagem2() {
-    videos[0].style.opacity = '0'
-    videos[1].style.opacity = '1'
-    videos[2].style.opacity = '0'
-    videos[3].style.opacity = '0'
+    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/R2Ebc_OFeug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 
 function clickimagem3() {
-    videos[0].style.opacity = '0'
-    videos[1].style.opacity = '0'
-    videos[2].style.opacity = '1'
-    videos[3].style.opacity = '0'
+    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/uRKIWQUucj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 
 function clickimagem4() {
-    videos[0].style.opacity = '0'
-    videos[1].style.opacity = '0'
-    videos[2].style.opacity = '0'
-    videos[3].style.opacity = '1'
+    divVideos.innerHTML = '<iframe src="https://www.youtube.com/embed/VHNzi1CjDb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 
 function menuPrincipal() {
@@ -120,15 +108,15 @@ function clickMudaImagemEsquerda() {
 function clickMudaImagemVideo() {
 
     if (px < 0) {
-        px += 265
+        px += 275
         imgv[0].style.marginLeft = `${px}px`
     }
 }
 
 function clickMudaImagemVideoDireita() {
 
-    if (px > -795) {
-        px += -265
+    if (px > -795 + 50) {
+        px += -275
         imgv[0].style.marginLeft = `${px}px`
     }
 }
