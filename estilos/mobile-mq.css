@@ -304,32 +304,37 @@ div.carrossel {
 
 .arrow-image-video {
     position: absolute;
-    top: 20%;
+    top: 0%;
     left: 50%;
     transform: translate(-310%, 0%);
-    background-color: var(--cor9);
+    background-color: rgba(255, 255, 255, 0.100);
     width: 50px;
-    height: 50px;
+    height: 150px;
     z-index: 1;
     font-size: 45px;
     text-align: center;
-    vertical-align: middle;
-    color: var(--cor8);
-    line-height: 90%;
-    border-radius: 50%;
+    color: var(--cor2-transp);
+    line-height: 30px;
+    border-radius: 10%;
     cursor: pointer;
     transition: all 0.2s;
+    border: 2px solid var(--cor2-transp);
 }
 
 .arrow-image-video:hover {
-    border: 2px solid var(--cor8);
-    box-shadow: 0px 0px 5px var(--cor9);
+    border: 2px solid var(--cor7-transp);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.499);
 }
 
 .arrow-image-video:active {
-    background-color: var(--cor8);
-    color: var(--cor9);
+    background-color: var(--cor2-transp);
+    color: rgba(255, 255, 255, 0.499);
     box-shadow: 0px 0px 10px var(--cor9);
+    left: 49%;
+}
+
+.arrow-image-video:nth-child(2):active {
+    left: 51%;
 }
 
 .arrow-image-video:nth-child(2) {
