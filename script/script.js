@@ -1,7 +1,9 @@
 let radio = document.getElementsByName('rimage')
 let backg = document.querySelector('.backg')
 let divRadio = document.querySelector('.radios')
-const btn = document.getElementById('btn-menu-hamb')
+const btnMenu = document.getElementById('btn-menu-hamb')
+let imgv = document.getElementsByClassName('img-video')[0]
+var px = 0
 
 divRadio.addEventListener("click", radios)
 
@@ -38,7 +40,7 @@ function menuPrincipal() {
         menu.style.top = '150px'
     }
 
-    btn.classList.toggle('animacao')
+    btnMenu.classList.toggle('animacao')
 
     /*
     top: 150px;
@@ -80,6 +82,23 @@ function clickMudaImagemEsquerda() {
         radio[2].checked = true
     }
 }
+
+function clickMudaImagemVideo() {
+
+    if (px < 0) {
+        px += 265
+        imgv.style.marginLeft = `${px}px`
+    }
+}
+
+function clickMudaImagemVideoDireita() {
+
+    if (px > -795) {
+        px += -265
+        imgv.style.marginLeft = `${px}px`
+    }
+}
+
 /*
 var startingx, atartinfy, movingx, movingy
 function touchstart(evt) {
