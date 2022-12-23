@@ -33,6 +33,14 @@ img#logo-tipo {
     width: 250px;
 }
 
+.gif-mariposas {
+    display: none;
+    position: absolute;
+    right: 1.5vw;
+    height: 150px;
+    box-shadow: 3px -3px 5px #9bcecb6c;
+}
+
 body {
     background-color: black;
 }
@@ -81,7 +89,7 @@ ul.linhamenu {
     transform: translate(-50%, 0%);
     display: block;
     text-align: center;
-    min-width: 800px;
+    width: 96vw;
     height: auto;
     transition: 0.5s;
     margin: auto;
@@ -125,8 +133,6 @@ button.animacao .linha-btn:nth-child(2) {
 button.animacao .linha-btn:nth-child(3) {
     transform: translateY(-0.35rem) rotate(-45deg);
 }
-
-
 
 li.item-menu {
     margin: auto;
@@ -255,7 +261,7 @@ div.backg {
 
 section.secao {
     background-color: var(--cor9);
-    max-width: 1300px;
+    width: 96vw;
     height: 80vh;
     margin: auto;
     box-shadow: 0px 0px 10px var(--cor9);
@@ -461,7 +467,3 @@ small {
     font-size: 10px;
     line-height: 12px;
 }
-
-
-
-
