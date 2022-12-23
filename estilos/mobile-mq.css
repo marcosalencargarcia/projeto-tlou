@@ -56,6 +56,17 @@ h1, h2 {
     font-size:2.063em;
 }
 
+h3 {
+    font-family: compact, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    font-size:1.5em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.388);
+    text-decoration: none;
+    padding: 10px;
+}
+
 header.cabecalho {
     position: relative;
     height: 150px;
@@ -232,7 +243,7 @@ input.radio {
 section:nth-child(even) div.backg {
     background: var(--cor9);
     width: 100%;
-    height: 100%;
+    height: auto;
     }
 
 div.backg {
@@ -280,7 +291,7 @@ section#third > div.backg > div:nth-child(2){
     height: 35%;
 }
 
-iframe {
+section#third > div.backg > div > iframe {
     position: absolute;
     top: 5%;
     left: 50%;
@@ -368,5 +379,44 @@ div.carrossel {
     transition: 0.3s;
 
 }
+
+div.conteudo > ul > li {
+    line-height: 25px;
+    padding-left: 10px;
+}
+
+
+div.conteudo > ul {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+section.secao:nth-child(4) {
+    height: auto;
+}
+
+footer {
+    width: 96vw;
+    height: 200px;
+}
+
+footer > div:nth-child(1){
+    width: 240px;
+    margin: 10px;
+    background-color: var(--cor9);
+    border-radius: 5px;
+}
+
+footer img {
+    height: 40px;
+    margin: 5px;
+}
+
+footer > div:nth-child(1) > img:nth-child(2) {
+    height: auto;
+    width: 80px;
+}
+
+
 
 
