@@ -33,12 +33,22 @@ img#logo-tipo {
     width: 250px;
 }
 
+.div-mariposa {
+    display: none;
+    position: absolute;
+    right: calc(1.2vw + 0px);
+    width: 50%;
+    height: 150px;
+    overflow: hidden;
+    padding: 0%;
+    box-shadow: 5px 1px 6px #9bcecba1;
+}
+
 .gif-mariposas {
     display: none;
     position: absolute;
-    right: 1.5vw;
-    height: 150px;
-    box-shadow: 3px -3px 5px #9bcecb6c;
+    right: 0px;
+    height: 300px;
 }
 
 body {
@@ -249,20 +259,24 @@ input.radio {
 section:nth-child(even) div.backg {
     background: var(--cor9);
     width: 100%;
-    height: auto;
+    
     }
+
+.secao:not(:nth-child(1)) {
+    height: auto;
+}
 
 div.backg {
     background-color: var(--cor8);
     width: 100%;
-    height: 100%;
+    height: 85vh;
 
 }
 
 section.secao {
     background-color: var(--cor9);
     width: 96vw;
-    height: 80vh;
+    height: 85vh;
     margin: auto;
     box-shadow: 0px 0px 10px var(--cor9);
 }
@@ -338,24 +352,26 @@ div.carrossel {
     top: 0%;
     left: 50%;
     transform: translate(-350%, 0%);
-    background-color: rgba(255, 255, 255, 0.251);
+    background-color: var(--cor7-transp);
     width: 50px;
     height: 100%;
     z-index: 1;
     font-size: 45px;
     text-align: center;
-    color: var(--cor2-transp);
+    color: rgba(255, 255, 255, 0.195);
     line-height: 30px;
     cursor: pointer;
     transition: all 0.2s;
     border: 2px solid var(--cor2-transp);
+    border-radius: 5px;
 }
 
 .arrow-image-video:hover {
     border: 2px solid var(--cor7-transp);
-    color: rgba(255, 255, 255, 0.499);
+    color: rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.499);
-    background-color: var(--cor7-transp);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 5px;
 }
 
 .arrow-image-video:active {
@@ -385,7 +401,7 @@ div.carrossel {
 
 }
 
-div.conteudo > ul > li {
+div.conteudo > div > ul > li {
     line-height: 25px;
     margin-left: 10px;
     margin-right: 10px;
@@ -393,13 +409,13 @@ div.conteudo > ul > li {
 }
 
 
-div.conteudo > ul {
+div.conteudo > div > ul {
     text-align: center;
     padding-bottom: 25px;
 }
 
-section.secao:nth-child(4) {
-    height: auto;
+section#fourth div.backg {
+    height: 100%;
 }
 
 footer {

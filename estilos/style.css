@@ -20,6 +20,11 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 
 @media only screen and (min-width: 768px) {
+
+    .div-mariposa {
+        display: block;
+    }
+
     .gif-mariposas {
         display: block;
     }
@@ -53,7 +58,36 @@ Extra large devices (large laptops and desktops, 1200px and up)
         display: none;
     }
 
+    div.titulo {
+    width: 100%;
+    color: var(--cor8);
+    padding: 30px;
+    text-align: left;
+}
     
+section#second > div.backg {
+    display: flex;
+}
+
+section#second > div.backg > div.titulo {
+    margin-top: 150px;
+    width: 50%;
+}
+
+section#second > div > div.conteudo {
+    margin-top: 100px;
+    width: 50%;
+}
+
+section#fourth > div > div.conteudo > div {
+    display: flex;
+    justify-content: center;
+}
+
+div.titulo > h2 {
+    text-align: center;
+}
+
     
 }
 
