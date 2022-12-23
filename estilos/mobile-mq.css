@@ -340,7 +340,6 @@ div.carrossel {
     text-align: center;
     color: var(--cor2-transp);
     line-height: 30px;
-    border-radius: 10%;
     cursor: pointer;
     transition: all 0.2s;
     border: 2px solid var(--cor2-transp);
