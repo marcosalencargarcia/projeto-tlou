@@ -427,11 +427,12 @@ footer > div.redes-sociais-marcos {
     position: absolute;
     top: 5%;
     right: 3%;
-    width: 80px;
+    width: 55px;
     background-color: var(--cor9);
     padding: 5px;
     border-radius: 5px;
     text-align: center;
+    line-height: 15px;
 }
 
 footer > div.redes-sociais-marcos img {
@@ -459,6 +460,7 @@ footer > div.creditos {
 
 small {
     font-size: 10px;
+    line-height: 12px;
 }
 
 
