@@ -396,13 +396,16 @@ section.secao:nth-child(4) {
 }
 
 footer {
+    position: relative;
     width: 96vw;
     height: 200px;
 }
 
 footer > div:nth-child(1){
+    position: absolute;
+    top: 5%;
+    left: 3%;
     width: 240px;
-    margin: 10px;
     background-color: var(--cor9);
     border-radius: 5px;
 }
@@ -412,9 +415,47 @@ footer img {
     margin: 5px;
 }
 
-footer > div:nth-child(1) > img:nth-child(2) {
+footer > div.logo-criadores > img:nth-child(2) {
     height: auto;
     width: 80px;
+}
+
+footer > div.redes-sociais-marcos {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    width: 80px;
+    background-color: var(--cor9);
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer > div.redes-sociais-marcos img {
+    display: block;
+    width: 30px;
+    height: auto;
+    margin: auto;
+    margin-top: 5px;
+    
+}
+
+div.redes-sociais-marcos p {
+    font-size: 12px;
+}
+
+footer > div.creditos {
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--cor9);
+}
+
+small {
+    font-size: 10px;
 }
 
 
