@@ -382,7 +382,7 @@ div.carrossel {
 
 div.conteudo > ul > li {
     line-height: 25px;
-    padding-left: 10px;
+    list-style: none;
 }
 
 
@@ -405,7 +405,7 @@ footer > div:nth-child(1){
     position: absolute;
     top: 5%;
     left: 3%;
-    width: 240px;
+    width: 230px;
     background-color: var(--cor9);
     border-radius: 5px;
 }
@@ -413,11 +413,6 @@ footer > div:nth-child(1){
 footer img {
     height: 40px;
     margin: 5px;
-}
-
-footer > div.logo-criadores > img:nth-child(2) {
-    height: auto;
-    width: 80px;
 }
 
 footer > div.redes-sociais-marcos {
