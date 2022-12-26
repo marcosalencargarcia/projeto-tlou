@@ -102,6 +102,10 @@ div.titulo > h2 {
         height: 80%;
     }
 
+    .div-mariposa {
+        right: calc(1.2vw + 3px);
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -112,6 +116,10 @@ div.titulo > h2 {
 
     section#third > div.backg > div > iframe {
         height: 90%;
+    }
+
+    .div-mariposa {
+        right: calc(1.2vw + 5px);
     }
 
 }
