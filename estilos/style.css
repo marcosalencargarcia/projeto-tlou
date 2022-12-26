@@ -94,8 +94,24 @@ div.titulo > h2 {
 
 @media only screen and (min-width: 992px) {
 
+    .arrow-image-video {
+        height: 80%;
+    }
+
+    section#third > div.backg > div > iframe {
+        height: 80%;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
+
+    .arrow-image-video {
+        height: 90%;
+    }
+
+    section#third > div.backg > div > iframe {
+        height: 90%;
+    }
 
 }
