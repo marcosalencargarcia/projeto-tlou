@@ -7,10 +7,6 @@ let divVideos = document.querySelector('section#third > div.backg > div:nth-chil
 var px = 43 //margem esquerda da primeira imagem do carrossel em pixels
 
 divRadio.addEventListener("click", radios)
-imgv[0].addEventListener("click", clickimagem1)
-imgv[1].addEventListener("click", clickimagem2)
-imgv[2].addEventListener("click", clickimagem3)
-imgv[3].addEventListener("click", clickimagem4)
 
 
 setInterval(function autoImage() {
@@ -24,6 +20,7 @@ function radios() {
         backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
     } else if (radio[1].checked) {
         backg.style.backgroundImage = "url(../imagens/second-home-background.jpg)"
+        backg.style.backgroundPosition = "center right"
     } else if (radio[2].checked) {
         backg.style.backgroundImage = "url(../imagens/third-home-background.jpg)"
     } else if (radio[3].checked) {
@@ -35,23 +32,6 @@ function radios() {
     background-size: cover;
     */
 
-}
-
-function clickimagem1() {
-    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/WxjeV10H1F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-
-}
-
-function clickimagem2() {
-    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/R2Ebc_OFeug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-}
-
-function clickimagem3() {
-    divVideos.innerHTML = '<iframe width="560" height="315" src="https://www.youtube.com/embed/uRKIWQUucj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-}
-
-function clickimagem4() {
-    divVideos.innerHTML = '<iframe src="https://www.youtube.com/embed/VHNzi1CjDb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
 }
 
 function menuPrincipal() {
@@ -105,27 +85,27 @@ function clickMudaImagemEsquerda() {
     }
 }
 
-function clickMudaImagemVideo() {
-//cada imagem irá correr 274px para ser posicionado na div carrossel
-    if (px < 0) {
-        px += 274
-        imgv[0].style.marginLeft = `${px}px`
-    } else {
-        imgv[0].style.marginLeft = `-779px`
-        px = -779
-    }
-}
+// function clickMudaImagemVideo() {
+// //cada imagem irá correr 274px para ser posicionado na div carrossel
+//     if (px < 0) {
+//         px += 274
+//         imgv[0].style.marginLeft = `${px}px`
+//     } else {
+//         imgv[0].style.marginLeft = `-779px`
+//         px = -779
+//     }
+// }
 
-function clickMudaImagemVideoDireita() {
-//cada imagem irá correr 274px para ser posicionado na div carrossel
-    if (px > -779 + 43) {
-        px += -274
-        imgv[0].style.marginLeft = `${px}px`
-    } else {
-        imgv[0].style.marginLeft = `43px` //reset do posicionamento inicial
-        px = 43
-    }
-}
+// function clickMudaImagemVideoDireita() {
+// //cada imagem irá correr 274px para ser posicionado na div carrossel
+//     if (px > -779 + 43) {
+//         px += -274
+//         imgv[0].style.marginLeft = `${px}px`
+//     } else {
+//         imgv[0].style.marginLeft = `43px` //reset do posicionamento inicial
+//         px = 43
+//     }
+// }
 
 /*
 var startingx, atartinfy, movingx, movingy
