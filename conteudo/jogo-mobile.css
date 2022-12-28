@@ -1,0 +1,49 @@
+@font-face {
+    font-family: compact;
+    src: url('font/compacta_bt/Compctan.ttf') format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*Borda cobre parte de dentro do elemento*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #2b4861;
+    --cor2-transp: rgba(0, 0, 0, 0.548);
+    --cor3: #070a11;
+    --cor4: #79b466;
+    --cor5: #355134;
+    --cor6: #AF854D;
+    --cor7-transp: rgba(0, 0, 0, 0.255);
+    --cor8: black;
+    --cor9: white;
+}
+
+div.backg:nth-child(1) {
+    height: 80vh;
+    padding: 10px 20px 10px 20px;
+    background-image: url("../imagens/jogo-tlou-part-I-primeiro.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: justify;
+}
+
+div.backg:nth-child(1) div {
+    background-color: var(--cor2-transp);
+    padding: 10px;
+    color: var(--cor9);
+}
+
+div.backg:nth-child(1) div.titulo {
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 20%;
+}
+
+div.backg:nth-child(1) div.conteudo {
+    border-radius: 0px 0px 10px 10px;
+}
