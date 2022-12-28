@@ -27,6 +27,7 @@ h2 {
 }
 
 div.backg {
+    position: relative;
     padding: 10px 20px 10px 20px;
     background-repeat: no-repeat;
     background-position: center center;
@@ -40,19 +41,25 @@ div.backg:nth-child(1) {
     background-image: url("../imagens/jogo-tlou-part-I-primeiro.png");
 }
 
-div.backg:nth-child(odd) div {
+div.titulo {
+    padding: 10px;
+}
+
+div.conteudo {
+    padding: 5px;
+}
+
+div.backg:nth-child(odd) > div.caixa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     background-color: var(--cor2-transp);
     padding: 10px;
     color: var(--cor9);
-}
-
-div.backg div.titulo {
-    border-radius: 10px 10px 0px 0px;
-    margin-top: 20%;
-}
-
-div.back div.conteudo {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
 }
 
 div.backg:nth-child(even) {
