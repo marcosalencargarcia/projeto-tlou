@@ -165,218 +165,22 @@ li.item-menu a {
     text-shadow: 0px 0px 10px var(--cor8);
 }
 
-section:nth-child(1) div.backg {
-    position: relative;
-    background-image: url('../imagens/first-home-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    transition: 0.5s;
-    z-index: 0;
-} 
-
-
-button.arrow-left {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    left: 0px;
-    font-size: 40px;
-    padding: 25px;
-    border: none;
-    color: rgba(0, 0, 0, 0.704);
-    background: linear-gradient(to left, transparent 0%, var(--cor2-transp));
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.3s ease-in-out;
-}
-
-button.arrow-left:hover {
-    opacity: 1;
-}
-
-button.arrow-right {
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
-    right: 0px;
-    font-size: 40px;
-    padding: 25px;
-    border: none;
-    color: rgba(0, 0, 0, 0.704);
-    background: linear-gradient(to right, transparent 0%, var(--cor2-transp));
-    cursor: pointer;
-    opacity: 0.5;
-    transition: 0.3s ease-in-out;
-}
-
-button.arrow-right:hover {
-    opacity: 1;
-}
-
-
-div.radios {
-    position: absolute;
-    bottom: 0%;
-    left: 50%;
-    width: 210px;
-    transform: translate(-50%, -50%);
-}
-
-.btnradios {
-    padding-left: 25px;
-    display: inline;
-}
-
-input.radio {
-    appearance: none;
-    position: relative;
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    border: 2px solid var(--cor9);
-    cursor: pointer;
-}
-
-.radio::before {
-    position: absolute;
-    content: '';
-    top: 4px;
-    left: 4px;
-    border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    background-color: var(--cor9);
-    opacity: 0;
-    transition: all 0.6s ease-in-out;
-}
-
-.radio:checked::before {
-    opacity: 1;
-    box-shadow: 0px 0px 5px var(--cor9);
-}
-
-section:nth-child(even) div.backg {
-    background: var(--cor9);
-    width: 100%;
-    
-    }
-
-.secao:not(:nth-child(1)) {
-    height: auto;
-}
-
-div.backg {
-    background-color: var(--cor8);
-    width: 100%;
-    height: 85vh;
-
-}
+/* Aqui acima é o cabeçalho e formatações padrão */
 
 section.secao {
     background-color: var(--cor9);
     width: 96vw;
-    height: 85vh;
     margin: auto;
     box-shadow: 0px 0px 10px var(--cor9);
 }
 
-div.titulo {
-    width: 100%;
-    color: var(--cor8);
-    padding: 30px;
-    text-align: left;
-}
-
-div.titulo h2 {
-    color: var(--cor8);
-    text-shadow: 2px 2px 10 rgba(0, 0, 0, 0.382);
-}
-
-div.conteudo p {
-    width: 100%;
-    height: 80%;
-    padding: 30px 20px 10px 20px;
-    color: var(--cor8);
-    text-align: justify;
-}
-
-section#third > div.backg > div:nth-child(1){
-    position: relative;
-    height: 100%;
-    
-}
-
-section#third > div.backg > div > iframe {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 70%;
-    transition: all 0.3s ease-in-out;
-}
-
-.arrow-image-video {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    background-color: var(--cor7-transp);
-    width: 50px;
-    height: 70%;
-    z-index: 1;
-    font-size: 45px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.195);
-    line-height: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    border: 0px solid var(--cor2-transp);
-    border-radius: 5px;
-}
-
-.arrow-image-video:hover {
-    border: 0px solid var(--cor7-transp);
-    color: rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.499);
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 5px;
-}
-
-.arrow-image-video:nth-child(2):active {
-    background-color: var(--cor2-transp);
-    color: rgba(255, 255, 255, 0.499);
-    box-shadow: 0px 0px 10px var(--cor9);
-    left: 2%;
-}
-
-.arrow-image-video:nth-child(3):active {
-    background-color: var(--cor2-transp);
-    color: rgba(255, 255, 255, 0.499);
-    box-shadow: 0px 0px 10px var(--cor9);
-    right: 2%;
-}
-
-.arrow-image-video:nth-child(3) {
-    right: 0px;
-}
-
-div.conteudo > div > ul > li {
-    line-height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    list-style: none;
-}
+/* Esqueleto das seções */
 
 
-div.conteudo > div > ul {
-    text-align: center;
-    padding-bottom: 25px;
-}
 
-section#fourth div.backg {
-    height: 100%;
-}
+
+
+/* Aqui abaixo começa o rodapé */
 
 footer {
     position: relative;

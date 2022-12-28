@@ -1,0 +1,81 @@
+/*
+Extra small devices (phones, 600px and down)
+Small devices (portrait tablets and large phones, 600px and up)
+Medium devices (landscape tablets, 768px and up)
+Large devices (laptops/desktops, 992px and up)
+Extra large devices (large laptops and desktops, 1200px and up)
+ */
+
+ :root {
+    --cor1: #2b4861;
+    --cor2-transp: rgba(0, 0, 0, 0.548);
+    --cor3: #070a11;
+    --cor4: #79b466;
+    --cor5: #355134;
+    --cor6: #AF854D;
+    --cor7-transp: rgba(0, 0, 0, 0.255);
+    --cor8: black;
+    --cor9: white;
+}
+
+/* @media only screen and (min-width: 600px) {
+
+} */
+
+@media only screen and (min-width: 768px) {
+
+    .div-mariposa {
+        display: block;
+    }
+
+    .gif-mariposas {
+        display: block;
+    }
+
+    ul.linhamenu {
+        color: var(--cor9);
+        background-color: var(--cor8);
+        position: static;
+        display: flex;
+        transform: translate(0px, 0px);
+        width: 96vw;
+        box-shadow: 0px 0px 10px var(--cor9);
+    }
+
+    li.item-menu {
+        margin: auto;
+        padding: 8px;
+        list-style-type: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        border-bottom: 1px solid black;
+    }
+
+    li.item-menu:hover {
+        background-color: rgba(255, 255, 255, 0.138);
+    }
+    
+    #btn-menu-hamb {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .div-mariposa {
+        right: calc(1.2vw + 3px);
+    }
+
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    .div-mariposa {
+        right: calc(1.2vw + 5px);
+    }
+
+}
