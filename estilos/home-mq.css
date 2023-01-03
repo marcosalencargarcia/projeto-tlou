@@ -114,6 +114,10 @@ div.titulo > h2 {
         height: 90%;
     }
 
+    section.secao {
+        width: 1150px;
+    }
+
     section#third > div.backg > div > iframe {
         height: 90%;
     }
