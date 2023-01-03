@@ -1,0 +1,97 @@
+@font-face {
+    font-family: compact;
+    src: url('font/compacta_bt/Compctan.ttf') format('truetype');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /*Borda cobre parte de dentro do elemento*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --cor1: #2b4861;
+    --cor2-transp: rgba(0, 0, 0, 0.548);
+    --cor3: #070a11;
+    --cor4: #79b466;
+    --cor5: #355134;
+    --cor6: #AF854D;
+    --cor7-transp: rgba(0, 0, 0, 0.255);
+    --cor8: black;
+    --cor9: white;
+}
+
+
+div.backg:nth-child(1) {
+    position: relative;
+    background-image: url('../imagens/tlou-serie-hbo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+div.titulo-serie {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor7-transp);
+    width: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.305);
+}
+
+div.titulo-serie > p {
+    color: white;
+}
+
+strong {
+    font-family: compact, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    font-size:2.063em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.388);
+    text-decoration: none;
+}
+
+div.backg:nth-child(1) img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    border-radius: 5px;
+}
+
+div.backg:nth-child(2) {
+    background-color: var(--cor8);
+    padding: 20px;
+}
+
+iframe {
+    width: 100%;
+}
+
+div.backg:nth-child(3) {
+    background-color: var(--cor9);
+    padding: 30px;
+}
+
+div.backg:nth-child(3) div.caixa {
+    color: var(--cor8);
+    text-align: justify;
+}
+
+div.backg:nth-child(3) h2 {
+    color: var(--cor8);
+}
+
+div.backg:nth-child(3) h3 {
+    padding-top: 20px;
+}
+
