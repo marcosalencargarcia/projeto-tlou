@@ -41,7 +41,7 @@ img#logo-tipo {
     height: 150px;
     overflow: hidden;
     padding: 0%;
-    box-shadow: 5px 1px 6px #ffffffa1;
+    box-shadow: 5px 1px 6px rgba(255, 255, 255, 0.36);
 }
 
 .gif-mariposas {
@@ -171,7 +171,7 @@ section.secao {
     background-color: var(--cor9);
     width: 96vw;
     margin: auto;
-    box-shadow: 0px 0px 10px var(--cor9);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.36);
 }
 
 /* Esqueleto das seções */
