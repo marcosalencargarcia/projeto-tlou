@@ -30,8 +30,4 @@ Extra large devices (large laptops and desktops, 1200px and up)
     div.backg:nth-child(2) {
         height: 600px;
     }
-
-    section.secao {
-        width: 1150px;
-    }
 }

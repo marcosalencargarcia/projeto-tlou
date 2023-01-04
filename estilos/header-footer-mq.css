@@ -93,4 +93,8 @@ Extra large devices (large laptops and desktops, 1200px and up)
         margin: auto;
     }
 
+    section.secao {
+        width: 1150px;
+    }
+
 }

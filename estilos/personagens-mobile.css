@@ -30,16 +30,33 @@ div.div-titulo {
     padding: 20px;
 }
 
-div.div-img {
-    background-color: #2b4861;
-    width: max-content;
-    border-radius: 100px;
-    overflow: hidden;
-    margin: auto;
-}
-
-div.div-titulo h2 {
+h2.titulo {
     text-align: center;
     color: var(--cor8);
 }
 
+h3 {
+    text-align: center;
+}
+
+div.div-img {
+    width: max-content;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.29);
+    border-radius: 50px;
+}
+
+.div-img img {
+    width: 300px;
+}
+
+div.conteudo {
+    padding: 20px;
+    text-align: justify;
+}
+
+div.cuidado {
+    padding: 20px;
+    text-align: justify; 
+}
