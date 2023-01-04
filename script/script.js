@@ -20,7 +20,6 @@ function radios() {
         backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
     } else if (radio[1].checked) {
         backg.style.backgroundImage = "url(../imagens/second-home-background.jpg)"
-        backg.style.backgroundPosition = "center right"
     } else if (radio[2].checked) {
         backg.style.backgroundImage = "url(../imagens/third-home-background.jpg)"
     } else if (radio[3].checked) {
