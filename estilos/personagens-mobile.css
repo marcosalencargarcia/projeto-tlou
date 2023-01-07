@@ -40,7 +40,9 @@ h3 {
 }
 
 div.div-img {
-    width: max-content;
+    display: flex;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.29);
@@ -68,7 +70,11 @@ div.cuidado h2 {
 }
 
 div.backg:nth-child(5) {
-    display: none;
+    /* display: none; */
+}
+
+div.backg:nth-child(5) div.titulo {
+    position: relative;
 }
 
 button.abrir {
@@ -90,3 +96,57 @@ button.abrir:hover {
     color: rgb(188, 0, 0);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.405);
 }
+
+div.conteudo > p {
+    padding: 0px 30px 10px 30px;
+}
+
+button.left-passInfected {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-500%, -35%);
+    font-size: 25px;
+    padding: 50px 10px;
+    border: none;
+    background-color: var(--cor2-transp);
+    color: var(--cor7-transp);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+button.left-passInfected:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.385);
+    color: black;
+}
+
+button.left-passInfected:active {
+    transform: translate(-510%, -35%);
+}
+
+button.right-passInfected {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(500%, -35%);
+    font-size: 25px;
+    padding: 50px 10px;
+    border: none;
+    background-color: var(--cor2-transp);
+    color: var(--cor7-transp);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+button.right-passInfected:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.385);
+    color: black;
+}
+
+button.right-passInfected:active {
+    transform: translate(510%, -35%);
+}
+
+

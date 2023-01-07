@@ -6,6 +6,9 @@ let imgv = document.getElementsByClassName('img-video')
 let divVideos = document.querySelector('section#third > div.backg > div:nth-child(1)')
 var px = 43 //margem esquerda da primeira imagem do carrossel em pixels
 let divInfected = document.getElementsByClassName('backg')[2]
+let imgInfected = document.querySelector('img.infectados')
+let nameInfected = document.querySelector('h3.nome-infectado')
+let aboutInfected = document.querySelector('p.sobre-infectado')
 
 divRadio.addEventListener("click", radios)
 
@@ -92,6 +95,11 @@ function openInfectedArea() {
     } else {
         divInfected.style.display = 'block'  
     }
+    
+}
+
+function changeInfected() {
+
     
 }
 
