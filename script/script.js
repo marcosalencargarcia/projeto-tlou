@@ -5,6 +5,7 @@ const btnMenu = document.getElementById('btn-menu-hamb')
 let imgv = document.getElementsByClassName('img-video')
 let divVideos = document.querySelector('section#third > div.backg > div:nth-child(1)')
 var px = 43 //margem esquerda da primeira imagem do carrossel em pixels
+let divInfected = document.getElementsByClassName('backg')[2]
 
 divRadio.addEventListener("click", radios)
 
@@ -82,6 +83,16 @@ function clickMudaImagemEsquerda() {
         backg.style.backgroundImage = "url(../imagens/first-home-background.jpg)"
         radio[2].checked = true
     }
+}
+
+function openInfectedArea() {
+    
+    if(divInfected.style.display == 'block'){
+        divInfected.style.display = 'none'
+    } else {
+        divInfected.style.display = 'block'  
+    }
+    
 }
 
 // function clickMudaImagemVideo() {
