@@ -109,8 +109,8 @@ button.left-passInfected {
     font-size: 25px;
     padding: 50px 10px;
     border: none;
-    background-color: var(--cor2-transp);
-    color: var(--cor7-transp);
+    background-color: rgba(0, 0, 0, 0.899);
+    color: rgba(0, 0, 0, 0.697);
     cursor: pointer;
     border-radius: 5px;
     transition: 0.2s;
@@ -118,7 +118,7 @@ button.left-passInfected {
 
 button.left-passInfected:hover {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.385);
-    color: black;
+    color: rgba(0, 0, 0, 0.488);
 }
 
 button.left-passInfected:active {
@@ -133,8 +133,8 @@ button.right-passInfected {
     font-size: 25px;
     padding: 50px 10px;
     border: none;
-    background-color: var(--cor2-transp);
-    color: var(--cor7-transp);
+    background-color: rgba(0, 0, 0, 0.899);
+    color: rgba(0, 0, 0, 0.697);
     cursor: pointer;
     border-radius: 5px;
     transition: 0.2s;
