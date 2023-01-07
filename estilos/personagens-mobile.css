@@ -70,7 +70,7 @@ div.cuidado h2 {
 }
 
 div.backg:nth-child(5) {
-    /* display: none; */
+    display: none;
 }
 
 div.backg:nth-child(5) div.titulo {
