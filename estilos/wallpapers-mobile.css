@@ -22,10 +22,14 @@
     --cor9: white;
 }
 
-div.titulo h2 {
+div.backg {
+    padding-bottom: 20px;
+}
+
+h2, h3 {
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 div.img {
@@ -33,19 +37,47 @@ div.img {
 
 }
 
-div.caixa {
+div.desktop {
     width: fit-content;
+    height: fit-content;
     border: 1px solid var(--cor7-transp);
     border-radius: 5px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+}
+
+div.caixa-desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.caixa-phone {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 div.img img {
     width: 100%;
+    cursor: pointer;
+}
+
+div.phone {
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid var(--cor7-transp);
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+div.phone > div.img {
+    width: 150px;
 }
 
 .btn-download {
@@ -56,6 +88,10 @@ div.img img {
     padding: 10px 80px;
     cursor: pointer;
     background-color: var(--cor4);
+}
+
+div.phone button.btn-download {
+    padding: 10px 40px;
 }
 
 .btn-download:hover {
