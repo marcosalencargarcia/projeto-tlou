@@ -45,4 +45,5 @@ div h3 {
 
 div.conteudo p {
     padding: 20px;
+    text-align: justify;
 }
