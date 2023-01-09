@@ -42,7 +42,6 @@ h3 {
 div.div-img {
     display: flex;
     width: 300px;
-    height: 300px;
     overflow: hidden;
     margin: auto;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.29);
@@ -54,7 +53,7 @@ div.div-img {
 }
 
 div.conteudo {
-    padding: 20px;
+    padding: 20px 20px;
     text-align: justify;
 }
 
@@ -70,7 +69,7 @@ div.cuidado h2 {
 }
 
 div.backg:nth-child(5) {
-    display: none;
+    /* display: none; */
 }
 
 div.backg:nth-child(5) div.titulo {
@@ -147,6 +146,11 @@ button.right-passInfected:hover {
 
 button.right-passInfected:active {
     transform: translate(510%, -35%);
+}
+
+.infectados:nth-child(1) {
+    margin: 0px 0px;
+    transition: 0.2s;
 }
 
 
