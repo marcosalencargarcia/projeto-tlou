@@ -160,7 +160,7 @@ section#third > div.backg > div > iframe {
     color: rgba(255, 255, 255, 0.195);
     line-height: 30px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in-out;
     border: 0px solid var(--cor2-transp);
     border-radius: 5px;
 }
