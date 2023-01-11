@@ -52,6 +52,11 @@ div.div-img {
     width: 100%;
 }
 
+.div-img div.carrossel {
+    width: auto;
+}
+
+
 div.conteudo {
     padding: 20px 20px;
     text-align: justify;
@@ -69,7 +74,7 @@ div.cuidado h2 {
 }
 
 div.backg:nth-child(5) {
-    display: none;
+    /* display: none; */
 }
 
 div.backg:nth-child(5) div.titulo {
@@ -99,6 +104,8 @@ button.abrir:hover {
 div.conteudo > p {
     padding: 0px 30px 10px 30px;
 }
+
+
 
 button.left-passInfected {
     position: absolute;

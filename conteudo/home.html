@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../estilos/header-footer.css" media="all">
     <link rel="stylesheet" href="../estilos/home-mq.css">
     <link rel="stylesheet" href="../estilos/header-footer-mq.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 </head>
 <body>
     <header class="cabecalho">
@@ -56,10 +57,15 @@
         </section>
         <section class="secao" id="third">
             <div class="backg">
-                <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/WxjeV10H1F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <button onclick="clickMudaImagemVideo()" class="arrow-image-video">&#8678</button>
-                    <button onclick="clickMudaImagemVideoDireita()" class="arrow-image-video">&#8680</button>
+                <div class="my-slider">
+                    <div class="carrossel">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WxjeV10H1F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="carrossel">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/EYsXofOa1OM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <button onclick="clickMudaImagemVideo()" class="arrow-image-video-left">&#8678</button>
+                    <button onclick="clickMudaImagemVideoDireita()" class="arrow-image-video-right">&#8680</button>
                 </div>
             </div>
         </section>
@@ -174,6 +180,7 @@
         
         </footer>
     <script src="../script/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 </body>
 </html>
 

@@ -5,11 +5,11 @@ Inserir o touch Screen
 
 
 Página Jogo:
-Background quando está em Desktop (Jefferson enviou pelo WhatsApp)
+Background quando está em Desktop (Jefferson enviou pelo WhatsApp) - OK
 
 
 Página Personagens:
-Alterar a responsividade quanto às setas de alteração dos infectados
+Alterar a responsividade quanto às setas de alteração dos infectados - OK
 Inserir o touch Screen
 
 Página WallPapers:
@@ -17,3 +17,6 @@ Inserir a abertura de Pop up quando clica na imagem
 Inserir a função download
 Inserir o carregamento menor de imagens (carregar de 3 em 3 para desktop e 6 para phone)
 Inserir um tipo de Filtro para aparecer apenas Desktop ou Phone
+
+GERAL:
+Inserir o conteúdo completo das páginas.
