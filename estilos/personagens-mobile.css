@@ -74,7 +74,9 @@ div.cuidado h2 {
 }
 
 div.backg:nth-child(5) {
+    position: relative;
     /* display: none; */
+    
 }
 
 div.backg:nth-child(5) div.titulo {
@@ -105,11 +107,8 @@ div.conteudo > p {
     padding: 0px 30px 10px 30px;
 }
 
-/* .c-carousel {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.c-carousel {
+    margin: auto;
     width: 300px;
 }
 
@@ -128,35 +127,52 @@ div.conteudo > p {
 
 .carousel--simple-next {
     position: absolute;
-    top: 50%;
-    right: 0%;
-    transform: translate(0%, -50%);
-    padding: 100px 5px;
-    font-size: 30px;
-    background-color: rgba(52, 52, 52, 0.314);
-    color: rgba(255, 255, 255, 0.377);
+    top: 170px;
+    right: 50%;
+    transform: translate(570%, -40%);
+    padding: 130px 5px;
+    font-size: 40px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     border: 0px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.carousel--simple-next:hover {
+    color: rgb(90, 90, 90);
+}
+
+.carousel--simple-next:active {
+    transform: translate(590%, -40%);
 }
 
 .carousel--simple-prev {
     position: absolute;
-    top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%);
-    padding: 100px 5px;
-    font-size: 30px;
-    background-color: rgba(52, 52, 52, 0.314);
-    color: rgba(255, 255, 255, 0.377);
+    top: 170px;
+    left: 50%;
+    transform: translate(-570%, -40%);
+    padding: 130px 5px;
+    font-size: 40px;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
     border-radius: 5px;
     border: 0px;
     cursor: pointer;
 }
 
+.carousel--simple-prev:hover {
+    color: rgb(90, 90, 90);
+}
+
+.carousel--simple-prev:active {
+    transform: translate(-590%, -40%);
+}
+
 .glider-dot.active {
-    background: green;
-} */
+    background: var(--cor5);
+}
 
 /* Aqui começa os estilos anteriores */
 
