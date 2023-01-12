@@ -105,7 +105,60 @@ div.conteudo > p {
     padding: 0px 30px 10px 30px;
 }
 
+/* .c-carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
 
+.c-carousel__slide {
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.c-carousel__slide img {
+    width: 300px;
+}
+
+.carousel--simple-next {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%, -50%);
+    padding: 100px 5px;
+    font-size: 30px;
+    background-color: rgba(52, 52, 52, 0.314);
+    color: rgba(255, 255, 255, 0.377);
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.carousel--simple-prev {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%, -50%);
+    padding: 100px 5px;
+    font-size: 30px;
+    background-color: rgba(52, 52, 52, 0.314);
+    color: rgba(255, 255, 255, 0.377);
+    border-radius: 5px;
+    border: 0px;
+    cursor: pointer;
+}
+
+.glider-dot.active {
+    background: green;
+} */
+
+/* Aqui começa os estilos anteriores */
 
 button.left-passInfected {
     position: absolute;

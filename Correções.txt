@@ -20,3 +20,4 @@ Inserir um tipo de Filtro para aparecer apenas Desktop ou Phone
 
 GERAL:
 Inserir o conteúdo completo das páginas.
+Inserir favicon
