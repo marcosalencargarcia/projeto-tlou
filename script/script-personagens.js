@@ -35,24 +35,23 @@ observer.observe(eventchange, {
   attributes: true
 });
 
-new Glider($simpleCarousel, {
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  draggable: true,
-  dots: ".js-carousel--simple-dots",
-  arrows: {
-    prev: ".js-carousel--simple-prev",
-    next: ".js-carousel--simple-next",
-  },
-  scrollLock: true
-});
-
 function openInfectedArea() {
     
     if(divInfected.style.display == 'block'){
         divInfected.style.display = 'none'
     } else {
-        divInfected.style.display = 'block'  
+        divInfected.style.display = 'block' 
+        new Glider($simpleCarousel, {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          draggable: true,
+          dots: ".js-carousel--simple-dots",
+          arrows: {
+            prev: ".js-carousel--simple-prev",
+            next: ".js-carousel--simple-next",
+          },
+          scrollLock: true
+        }); 
     }
     
 }

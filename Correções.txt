@@ -1,7 +1,6 @@
 Página Home:
-Setas vídeos
-Height da segunda section quando está em Phone
-Inserir o touch Screen
+Setas vídeos - OK
+Height da segunda section quando está em Phone - OK
 
 
 Página Jogo:
@@ -10,7 +9,7 @@ Background quando está em Desktop (Jefferson enviou pelo WhatsApp) - OK
 
 Página Personagens:
 Alterar a responsividade quanto às setas de alteração dos infectados - OK
-Inserir o touch Screen
+Inserir o touch Screen - OK
 
 Página WallPapers:
 Inserir a abertura de Pop up quando clica na imagem
