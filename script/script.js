@@ -9,14 +9,7 @@ function menuPrincipal() {
     }
 
     btnMenu.classList.toggle('animacao')
-
-    /*
-    top: 150px;
-    */
 }
-
-
-
 
 
 

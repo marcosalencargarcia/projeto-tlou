@@ -18,6 +18,6 @@ Inserir o carregamento menor de imagens (carregar de 3 em 3 para desktop e 6 par
 Inserir um tipo de Filtro para aparecer apenas Desktop ou Phone
 
 GERAL:
-Inserir o conteúdo completo das páginas.
-Inserir favicon
+Inserir o conteúdo completo das páginas. - OK
+Inserir favicon - OK
 Adicionar o touch fora do menu, recolher o menu mobile
