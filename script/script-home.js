@@ -1,9 +1,7 @@
 let divRadio = document.querySelector('.radios')
 let radio = document.getElementsByName('rimage')
 let backg = document.querySelector('.backg')
-let imgv = document.getElementsByClassName('img-video')
-let divVideos = document.querySelector('section#third > div.backg > div:nth-child(1)')
-var px = 43 //margem esquerda da primeira imagem do carrossel em pixels
+let divVideos = document.querySelector('div.carrossel iframe')
 
 divRadio.addEventListener("click", radios)
 
@@ -65,6 +63,37 @@ function clickMudaImagemEsquerda() {
         radio[2].checked = true
     }
 }
+
+function clickChangeVideoNext() {
+
+    if (divVideos.src == 'https://www.youtube.com/embed/WxjeV10H1F0') {
+        divVideos.src = 'https://www.youtube.com/embed/VHNzi1CjDb0'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/VHNzi1CjDb0') {
+        divVideos.src = 'https://www.youtube.com/embed/btmN-bWwv0A'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/btmN-bWwv0A') {
+        divVideos.src = 'https://www.youtube.com/embed/Jb-uWiePePg'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/Jb-uWiePePg') {
+        divVideos.src = 'https://www.youtube.com/embed/vhII1qlcZ4E'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/vhII1qlcZ4E') {
+        divVideos.src = 'https://www.youtube.com/embed/WxjeV10H1F0'
+    }
+}
+
+function clickChangeVideoPrev() {
+    if (divVideos.src == 'https://www.youtube.com/embed/WxjeV10H1F0') {
+        divVideos.src = 'https://www.youtube.com/embed/vhII1qlcZ4E'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/VHNzi1CjDb0') {
+        divVideos.src = 'https://www.youtube.com/embed/WxjeV10H1F0'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/btmN-bWwv0A') {
+        divVideos.src = 'https://www.youtube.com/embed/VHNzi1CjDb0'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/Jb-uWiePePg') {
+        divVideos.src = 'https://www.youtube.com/embed/btmN-bWwv0A'
+    } else if (divVideos.src == 'https://www.youtube.com/embed/vhII1qlcZ4E') {
+        divVideos.src = 'https://www.youtube.com/embed/Jb-uWiePePg'
+    }
+}
+
+//<iframe width="560" height="315" src="https://www.youtube.com/embed/vhII1qlcZ4E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 // function clickMudaImagemVideo() {
 // //cada imagem irá correr 274px para ser posicionado na div carrossel

@@ -139,13 +139,12 @@ section#third > div.backg > div:nth-child(1){
 
 div.carrossel > iframe {
     position: absolute;
-    display: flex;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out;
     width: 90%;
     height: 85%;
-    transition: all 0.3s ease-in-out;
 }
 
 .arrow-image-video-left {
