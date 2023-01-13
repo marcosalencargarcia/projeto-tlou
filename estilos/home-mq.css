@@ -70,12 +70,11 @@ section#second > div.backg {
 }
 
 section#second > div.backg > div.titulo {
-    margin-top: 150px;
+    padding-top: 200px;
     width: 50%;
 }
 
 section#second > div > div.conteudo {
-    margin-top: 100px;
     width: 50%;
 }
 
@@ -86,6 +85,11 @@ section#fourth > div > div.conteudo > div {
 
 div.titulo > h2 {
     text-align: center;
+}
+
+section#second > div.backg {
+    height: auto;
+    padding: 50px 0px;
 }
 
     
@@ -106,6 +110,12 @@ div.titulo > h2 {
         right: calc(1.2vw + 3px);
     }
 
+    section#second > div.backg > div.titulo {
+        padding-top: 150px;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -120,6 +130,10 @@ div.titulo > h2 {
 
     .div-mariposa {
         right: calc(1.2vw + 5px);
+    }
+
+    section#second > div > div.conteudo {
+        padding-right: 50px;
     }
 
 }
