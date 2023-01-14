@@ -2,6 +2,7 @@ let wallDesktop = document.querySelectorAll('.desktop img, .phone img')
 let popup = document.querySelector('.js-popup-wrapper')
 let imgPopup = document.querySelector('.js-popup-content img')
 let popupClose = document.querySelector('.js-popup-close')
+let btnDownload = document.querySelectorAll('.btn-download')
 
 wallDesktop.forEach(element => {
     element.addEventListener("click", (event) => {
