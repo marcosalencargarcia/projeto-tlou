@@ -13,7 +13,7 @@ Inserir o touch Screen - OK
 
 Página WallPapers:
 Inserir a abertura de Pop up quando clica na imagem - OK
-Inserir a função download
+Inserir a função download - OK
 
 GERAL:
 Inserir o conteúdo completo das páginas. - OK
