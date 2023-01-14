@@ -1,16 +1,16 @@
 let wallDesktop = document.querySelectorAll('.desktop img, .phone img')
-let popup = document.querySelector('.popup-wrapper')
-let imgPopup = document.querySelector('.popup-content img')
-let popupclose = document.querySelector('.popup-close')
+let popup = document.querySelector('.js-popup-wrapper')
+let imgPopup = document.querySelector('.js-popup-content img')
+let popupClose = document.querySelector('.js-popup-close')
 
 wallDesktop.forEach(element => {
     element.addEventListener("click", (event) => {
-        popup.style.display = 'block'
+        popup.style.display = 'flex'
         imgPopup.src = event.currentTarget.src
     })
 });
 
-popupclose.addEventListener("click", () => {
+popupClose.addEventListener("click", () => {
     popup.style.display = 'none'
 })
 
