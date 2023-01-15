@@ -29,7 +29,8 @@ header {
 img#logo-tipo {
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
     width: 250px;
 }
 

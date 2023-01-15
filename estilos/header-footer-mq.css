@@ -24,6 +24,14 @@ Extra large devices (large laptops and desktops, 1200px and up)
 
 @media only screen and (min-width: 768px) {
 
+    img#logo-tipo {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        transform: translate(0%, 0%);
+        width: 250px;
+    }
+
     .div-mariposa {
         display: block;
     }

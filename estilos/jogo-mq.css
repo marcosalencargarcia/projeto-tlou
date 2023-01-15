@@ -38,6 +38,34 @@ Extra large devices (large laptops and desktops, 1200px and up)
         height: 400px;
     }
 
+    div.backg:nth-child(1) {
+        height: 80vh;
+        background-image: url(../imagens/jogo-tlou-part-I-primeiro.png);
+    }
+
+    div.backg {
+        position: relative;
+        padding: 10px 20px 10px 20px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: justify;
+    }
+
+    div.backg:nth-child(odd) > div.caixa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        background-color: var(--cor2-transp);
+        padding: 10px;
+        color: var(--cor9);
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 40%);
+    }
+
 }
 
 @media only screen and (min-width: 992px) {
