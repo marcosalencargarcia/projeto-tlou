@@ -1,4 +1,4 @@
-# The Last of Us — Fan Site
+# The Last of Us | Fan Site
 
 Fan site não oficial sobre a franquia **The Last of Us**: jogos da Naughty Dog, série da HBO, personagens, infectados, wallpapers e um feed de novidades que se atualiza sozinho.
 
@@ -19,9 +19,9 @@ Fan site não oficial sobre a franquia **The Last of Us**: jogos da Naughty Dog,
 ## Efeitos e interações
 
 - **Esporos** saem de qualquer clique na página (canvas).
-- **Vagalumes** no topo de cada página — clicar solta um enxame que sobe “em direção à luz”.
+- **Vagalumes** no topo de cada página, clicar solta um enxame que sobe “em direção à luz”.
 - **Zona infectada**: máscara de gás ao entrar, lanterna que segue o cursor/dedo, modo escuta (segure `E`), troca por setas ou swipe.
-- **Áudio sintetizado** com Web Audio (nenhum arquivo baixado): estalos dos estaladores, clique da lanterna e o violão do Joel (Karplus-Strong). O som fica desligado por padrão — botão no topo.
+- **Áudio sintetizado** com Web Audio (nenhum arquivo baixado): estalos dos estaladores, clique da lanterna e o violão do Joel (Karplus-Strong). O som fica desligado por padrão, botão no topo.
 - Vídeos do YouTube só carregam ao clicar; imagens otimizadas e com lazy loading.
 - Respeita `prefers-reduced-motion`.
 

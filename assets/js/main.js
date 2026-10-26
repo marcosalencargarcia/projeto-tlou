@@ -1,5 +1,5 @@
 /* ==========================================================================
-   The Last of Us — Fan Site
+   The Last of Us | Fan Site
    Script compartilhado por todas as páginas. Cada módulo só roda se os
    elementos dele existirem na página atual.
    ========================================================================== */
@@ -37,7 +37,7 @@ function toast(message) {
 }
 
 /* ==========================================================================
-   Áudio sintetizado (Web Audio) — nada é baixado, tudo é gerado na hora
+   Áudio sintetizado (Web Audio), nada é baixado, tudo é gerado na hora
    ========================================================================== */
 
 const sound = {
@@ -97,7 +97,7 @@ const sound = {
         osc.stop(ctx.currentTime + 0.06)
     },
 
-    // Corda dedilhada (Karplus-Strong) — toca mesmo com o som global desligado,
+    // Corda dedilhada (Karplus-Strong), toca mesmo com o som global desligado,
     // porque só acontece quando a pessoa clica no violão
     pluck(freq, when = 0, volume = 0.5) {
         const ctx = this.getCtx()
@@ -187,7 +187,7 @@ function initHeader() {
 }
 
 /* ==========================================================================
-   Esporos ao clicar — em qualquer lugar da página
+   Esporos ao clicar, em qualquer lugar da página
    ========================================================================== */
 
 function initSpores() {
@@ -259,7 +259,7 @@ function initSpores() {
 }
 
 /* ==========================================================================
-   Vagalumes no hero — "procure a luz"
+   Vagalumes no hero, "procure a luz"
    ========================================================================== */
 
 function initFireflies() {
@@ -505,7 +505,7 @@ function initGuitar() {
 }
 
 /* ==========================================================================
-   Zona infectada — lanterna, modo escuta e estágios do cordyceps
+   Zona infectada, lanterna, modo escuta e estágios do cordyceps
    ========================================================================== */
 
 const INFECTED = [
@@ -526,7 +526,7 @@ const INFECTED = [
     },
     {
         name: 'Trôpegos', stage: 'Variante · ambientes úmidos', img: 'tropegos',
-        text: 'Introduzidos em Part II, surgem quando o infectado vive em locais muito úmidos. Bolsões de esporos crescem na cabeça e nos ombros e eles liberam nuvens ácidas — inclusive ao morrer. Mantenha distância e use ataques à longa distância.',
+        text: 'Introduzidos em Part II, surgem quando o infectado vive em locais muito úmidos. Bolsões de esporos crescem na cabeça e nos ombros e eles liberam nuvens ácidas, inclusive ao morrer. Mantenha distância e use ataques à longa distância.',
         stats: [35, 65, 50]
     },
     {
@@ -660,7 +660,7 @@ function initInfectedZone() {
 }
 
 /* ==========================================================================
-   Wallpapers — galeria filtrável + lightbox com download
+   Wallpapers, galeria filtrável + lightbox com download
    ========================================================================== */
 
 const WALLPAPERS = {

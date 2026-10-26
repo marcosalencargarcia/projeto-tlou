@@ -1,5 +1,5 @@
 // Busca notícias da franquia no Google Notícias (RSS), classifica por assunto
-// e atualiza data/noticias.json. Roda no GitHub Actions — sem dependências.
+// e atualiza data/noticias.json. Roda no GitHub Actions, sem dependências.
 //   node scripts/fetch-news.mjs
 
 import { readFile, writeFile } from 'node:fs/promises'

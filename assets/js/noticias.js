@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Página de Novidades — radar de produção + feed de notícias.
+   Página de Novidades, radar de produção + feed de notícias.
    O feed vem de data/noticias.json, gerado pelo GitHub Actions
    (scripts/fetch-news.mjs) a cada 6 horas.
    ========================================================================== */
