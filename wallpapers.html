@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wallpapers — The Last of Us</title>
+    <meta name="description" content="Wallpapers de The Last of Us em alta resolução para desktop e celular, com visualização ampliada e download em um clique.">
+    <meta name="theme-color" content="#0a0c0b">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Last of Us — Fan Site">
+    <meta property="og:title" content="Wallpapers — The Last of Us">
+    <meta property="og:description" content="Wallpapers de The Last of Us em alta resolução para desktop e celular, com visualização ampliada e download em um clique.">
+    <meta property="og:image" content="https://marcosalencargarcia.github.io/projeto-tlou/assets/img/hero/guitar.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Special+Elite&display=swap">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="wallpapers">
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="The Last of Us — página inicial">
+                <img src="assets/img/logo.png" alt="The Last of Us" width="136" height="30">
+            </a>
+            <nav class="nav" id="nav" aria-label="Principal">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="index.html">Início</a></li>
+                    <li><a class="nav-link" href="jogos.html">Jogos</a></li>
+                    <li><a class="nav-link" href="serie.html">Série HBO</a></li>
+                    <li><a class="nav-link" href="personagens.html">Personagens</a></li>
+                    <li><a class="nav-link" href="naughtydog.html">Naughty Dog</a></li>
+                    <li><a class="nav-link" href="wallpapers.html" aria-current="page">Wallpapers</a></li>
+                    <li><a class="nav-link" href="noticias.html"><span class="live-dot" aria-hidden="true"></span>Novidades</a></li>
+                </ul>
+            </nav>
+            <div class="header-tools">
+                <button class="icon-btn" data-sound-toggle aria-pressed="false" aria-label="Ativar efeitos sonoros" title="Efeitos sonoros">
+                    <svg class="icon-sound-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg>
+                    <svg class="icon-sound-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="m23 9-6 6"/><path d="m17 9 6 6"/></svg>
+                </button>
+                <button class="icon-btn menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+                    <div><span></span><span></span><span></span></div>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero hero--short page-hero" style="min-height:62svh">
+            <div class="hero-media" aria-hidden="true">
+                <div class="hero-slide is-active" style="background-image:url(assets/img/hero/guitar.jpg)"></div>
+            </div>
+            <canvas id="fireflies" aria-hidden="true"></canvas>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="eyebrow">Galeria</span>
+                    <h1 class="display h1">Wallpapers</h1>
+                    <p class="lead">Clique em uma imagem para ampliar, navegue com as setas e baixe a versão original em alta resolução.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--tight">
+            <div class="container">
+                <div class="filter-bar">
+                    <div class="tabs" role="tablist" aria-label="Tipo de wallpaper">
+                        <button class="tab" role="tab" data-wall-type="desktop" aria-selected="true">Desktop</button>
+                        <button class="tab" role="tab" data-wall-type="phone" aria-selected="false">Celular</button>
+                    </div>
+                    <span class="count" data-wall-count></span>
+                </div>
+                <div class="masonry" data-wall-grid></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="lightbox" role="dialog" aria-modal="true" aria-label="Visualização do wallpaper">
+        <button class="lb-btn lb-close" aria-label="Fechar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+        <button class="lb-btn lb-prev" aria-label="Anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+        <img src="" alt="Wallpaper ampliado">
+        <button class="lb-btn lb-next" aria-label="Próximo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+        <div class="lb-bar">
+            <span class="lb-counter"></span>
+            <a class="btn btn--sm" data-lb-download href="#" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+                Baixar original
+            </a>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/img/logo.png" alt="The Last of Us" width="118" height="26" loading="lazy">
+                    <p>Fan site não oficial e sem fins lucrativos, feito por fã para fãs. Nomes, imagens e vídeos pertencem à Naughty Dog, Sony Interactive Entertainment, PlayStation Productions e HBO.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Explorar</h4>
+                    <ul>
+                        <li><a href="jogos.html">Jogos</a></li>
+                        <li><a href="serie.html">Série HBO</a></li>
+                        <li><a href="personagens.html">Personagens</a></li>
+                        <li><a href="wallpapers.html">Wallpapers</a></li>
+                        <li><a href="noticias.html">Novidades</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Fontes oficiais</h4>
+                    <ul>
+                        <li><a href="https://www.naughtydog.com/blog" target="_blank" rel="noopener">Blog da Naughty Dog</a></li>
+                        <li><a href="https://blog.playstation.com/tag/the-last-of-us/" target="_blank" rel="noopener">PlayStation Blog</a></li>
+                        <li><a href="https://www.hbo.com/the-last-of-us" target="_blank" rel="noopener">HBO — The Last of Us</a></li>
+                        <li><a href="https://www.playstation.com/pt-br/the-last-of-us/" target="_blank" rel="noopener">PlayStation — franquia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="partners" aria-label="Empresas responsáveis pela franquia">
+                <a href="https://www.playstation.com/pt-br/" target="_blank" rel="noopener"><img src="imagens/logo-playstation.png" alt="PlayStation" loading="lazy"></a>
+                <a href="https://www.naughtydog.com/" target="_blank" rel="noopener"><img src="imagens/logo-Naughty-Dog.png" alt="Naughty Dog" loading="lazy"></a>
+                <a href="https://www.sony.com/" target="_blank" rel="noopener"><img src="imagens/logo-sony.png" alt="Sony" loading="lazy"></a>
+                <a href="https://www.hbo.com/" target="_blank" rel="noopener"><img src="imagens/logo-hbo.png" alt="HBO" loading="lazy"></a>
+            </div>
+            <div class="footer-bottom">
+                <span>© <span data-year>2026</span> · Desenvolvido por Marcos Alencar</span>
+                <div class="socials">
+                    <a href="https://github.com/marcosalencargarcia" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+                    <a href="https://www.linkedin.com/in/marcos-antonio-alencar-garcia-902617137/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    <a href="https://www.instagram.com/quinhos_ag/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
